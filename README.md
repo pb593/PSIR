@@ -1,3 +1,3 @@
 PSIR
 ======
-|Product search image recogniser
+Product search image recogniser
