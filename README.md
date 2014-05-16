@@ -1,4 +1,3 @@
 PSIR
-====
-
-Pretty shitty image recogniser
+======
+|Product search image recogniser
