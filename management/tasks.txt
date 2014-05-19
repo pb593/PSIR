@@ -1,0 +1,13 @@
+Tasks and assignments:
+
+
+Alfie:
+	Product, Offer, Vender, Salesman
+
+Ashley:
+	Connections and communication handling
+	Test prompt
+
+Paul:
+	Database, Image Analysis
+	
