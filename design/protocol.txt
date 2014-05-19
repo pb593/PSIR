@@ -1,0 +1,89 @@
+Connection created:
+	Server: PSIR Version 0.0.0
+	Server: WhatAreYou
+	Client: User [VERSION]
+			Server: WhatDoYouWant
+					Client: Login USER_ID
+							Server: GiveKey   # Simplification: like password
+							Client: HereIsKey KEY
+									Server: Accepted
+										Rejected
+										  (again 1)
+					  (again 0)
+					Client: Scan
+							Server: GiveImage
+							Client: HereIsImage BYTES DUMPS_DATA   # See ML tick 4 for image format
+							Server: HereAreProducts
+									Server: HereIsProduct PRODUCT_ID
+									...
+									Server: EndList
+				          (again 0)
+					Client: GiveProductDescription PRODUCT_ID
+							Server: HereIsProductDescription
+									Server: HereIsOffer OFFER_ID
+									...
+									Server: EndList
+					  (again 0)
+					Client: GiveOfferDescription OFFER_ID
+							Server: HereIsOfferDescription
+									Server: HereIsProduct PRODUCT_ID
+									Server: HereIsPrice MONEY
+									...
+									Server: EndList
+					  (again 0)
+					Client: Purchase
+							Server: FillCart
+									Client: AddToCart OFFER_ID COUNT
+									Client: AddToCart OFFER_ID COUNT
+											...
+									...
+									Client: Submit
+							Server: GiveAddress
+									Client: HereIsAddress ADDRESS
+							Server: GivePayment MONEY
+									Client: PayByCard
+											Client: HereIsCardNumber NUMBER
+											Client: HereIsCardExpires DATA
+											Client: HereIsCardSecurityCode CODE
+											...
+											Client: Submit
+													Server: Accept
+														Reject
+													  	  (again 1)
+									...
+							Server: Receipt ORDER_ID
+					  (again 0)
+					Client: RegisterUser
+							Server: GiveKey
+							Client: HereIsKey KEY
+							Server: YouAre USER_ID   # Phone doesn't care about usernames.
+					  (again 0)
+		Vendor [VERSION]
+			Server: WhatDoYouWant
+					Client: Login VENDOR_NAME
+							Server: GivePassword
+							Client: HereIsPassword PASSWORD
+									Server: Accepted
+										Rejected
+										  (again 1)
+					  (again 0)
+					Client: RegisterVendor
+							Server: GiveUsername
+									Client: HereIsUsername VENDOR_NAME
+											Server: Accepted
+												Rejected   # In use
+												  (again 1)
+							Server: GivePassword
+							Client: HereIsPassword PASSWORD
+							Server: YouAre VENDOR_NAME
+					  (again 0)
+					Client: RegisterOffer
+							Server: GiveProducts
+									Client: HereIsProduct PRODUCT_ID
+									Client: EndList
+							Server: GivePrice
+									Client: HereIsPrice MONEY
+							Server: GiveAvailability
+									Client: HereIsAvailablility COUNT
+							Server: OfferIs OFFER_ID
+					
