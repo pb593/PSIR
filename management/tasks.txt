@@ -2,7 +2,7 @@ Tasks and assignments:
 
 
 Alfie:
-	Product, Offer, Vender, Salesman
+	Product, Offer, Vendor, Salesman
 
 Ashley:
 	Connections and communication handling
