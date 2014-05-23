@@ -3351,10 +3351,10 @@ if not found.#</dia:string>
 if item with the specified key already exists#</dia:string>
           </dia:attribute>
           <dia:attribute name="abstract">
-            <dia:boolean val="true"/>
+            <dia:boolean val="false"/>
           </dia:attribute>
           <dia:attribute name="inheritance_type">
-            <dia:enum val="0"/>
+            <dia:enum val="2"/>
           </dia:attribute>
           <dia:attribute name="query">
             <dia:boolean val="false"/>
@@ -4009,7 +4009,7 @@ if item with the specified key already exists#</dia:string>
         <dia:point val="67.9068,27.0334"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="67.8568,26.9834;82.7018,36.2834"/>
+        <dia:rectangle val="67.8568,26.9834;82.7018,35.4834"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
         <dia:point val="67.9068,27.0334"/>
@@ -4018,7 +4018,7 @@ if item with the specified key already exists#</dia:string>
         <dia:real val="14.744999999999999"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
-        <dia:real val="9.1999999999999993"/>
+        <dia:real val="8.4000000000000004"/>
       </dia:attribute>
       <dia:attribute name="name">
         <dia:string>#VendorDatabase#</dia:string>
@@ -4192,54 +4192,6 @@ if item with the specified key already exists#</dia:string>
             <dia:boolean val="false"/>
           </dia:attribute>
           <dia:attribute name="parameters"/>
-        </dia:composite>
-        <dia:composite type="umloperation">
-          <dia:attribute name="name">
-            <dia:string>#add#</dia:string>
-          </dia:attribute>
-          <dia:attribute name="stereotype">
-            <dia:string>##</dia:string>
-          </dia:attribute>
-          <dia:attribute name="type">
-            <dia:string>#void#</dia:string>
-          </dia:attribute>
-          <dia:attribute name="visibility">
-            <dia:enum val="0"/>
-          </dia:attribute>
-          <dia:attribute name="comment">
-            <dia:string>##</dia:string>
-          </dia:attribute>
-          <dia:attribute name="abstract">
-            <dia:boolean val="false"/>
-          </dia:attribute>
-          <dia:attribute name="inheritance_type">
-            <dia:enum val="2"/>
-          </dia:attribute>
-          <dia:attribute name="query">
-            <dia:boolean val="false"/>
-          </dia:attribute>
-          <dia:attribute name="class_scope">
-            <dia:boolean val="false"/>
-          </dia:attribute>
-          <dia:attribute name="parameters">
-            <dia:composite type="umlparameter">
-              <dia:attribute name="name">
-                <dia:string>#item#</dia:string>
-              </dia:attribute>
-              <dia:attribute name="type">
-                <dia:string>#Vendor#</dia:string>
-              </dia:attribute>
-              <dia:attribute name="value">
-                <dia:string>##</dia:string>
-              </dia:attribute>
-              <dia:attribute name="comment">
-                <dia:string>##</dia:string>
-              </dia:attribute>
-              <dia:attribute name="kind">
-                <dia:enum val="0"/>
-              </dia:attribute>
-            </dia:composite>
-          </dia:attribute>
         </dia:composite>
       </dia:attribute>
       <dia:attribute name="template">
@@ -4539,18 +4491,18 @@ if item with the specified key already exists#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="75.2793,36.2837"/>
+        <dia:point val="75.2793,35.4836"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="74.5293,35.5337;77,40.0496"/>
+        <dia:rectangle val="74.5293,34.7336;77,40.0496"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="75.2793,36.2837"/>
-        <dia:point val="75.2793,38.4916"/>
-        <dia:point val="75.26,38.4916"/>
+        <dia:point val="75.2793,35.4836"/>
+        <dia:point val="75.2793,38.0916"/>
+        <dia:point val="75.26,38.0916"/>
         <dia:point val="75.26,39.9996"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
@@ -4568,7 +4520,7 @@ if item with the specified key already exists#</dia:string>
         <dia:color val="#000000"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O19" connection="16"/>
+        <dia:connection handle="0" to="O19" connection="14"/>
         <dia:connection handle="1" to="O11" connection="18"/>
       </dia:connections>
     </dia:object>
