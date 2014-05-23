@@ -1896,7 +1896,7 @@ Does this require much state?#</dia:string>
         <dia:point val="32.85,69.15"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="32.8,69.1;46.49,74.2"/>
+        <dia:rectangle val="32.8,69.1;46.49,75"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
         <dia:point val="32.85,69.15"/>
@@ -1905,7 +1905,7 @@ Does this require much state?#</dia:string>
         <dia:real val="13.59"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
-        <dia:real val="5"/>
+        <dia:real val="5.8000000000000007"/>
       </dia:attribute>
       <dia:attribute name="name">
         <dia:string>#ImageSignature#</dia:string>
@@ -2000,7 +2000,7 @@ Does this require much state?#</dia:string>
             <dia:string>#signatureBits#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#long#</dia:string>
+            <dia:string>#final int#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -2009,7 +2009,7 @@ Does this require much state?#</dia:string>
             <dia:string>#We're being cheap here#</dia:string>
           </dia:attribute>
           <dia:attribute name="visibility">
-            <dia:enum val="0"/>
+            <dia:enum val="1"/>
           </dia:attribute>
           <dia:attribute name="abstract">
             <dia:boolean val="false"/>
@@ -2070,13 +2070,43 @@ Does this require much state?#</dia:string>
         </dia:composite>
         <dia:composite type="umloperation">
           <dia:attribute name="name">
+            <dia:string>#getSignature#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="stereotype">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#int#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="visibility">
+            <dia:enum val="0"/>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="abstract">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="inheritance_type">
+            <dia:enum val="2"/>
+          </dia:attribute>
+          <dia:attribute name="query">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="class_scope">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="parameters"/>
+        </dia:composite>
+        <dia:composite type="umloperation">
+          <dia:attribute name="name">
             <dia:string>#RawToBits#</dia:string>
           </dia:attribute>
           <dia:attribute name="stereotype">
             <dia:string>##</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#long#</dia:string>
+            <dia:string>#int#</dia:string>
           </dia:attribute>
           <dia:attribute name="visibility">
             <dia:enum val="1"/>
@@ -4767,7 +4797,7 @@ if item with the specified key already exists#</dia:string>
         <dia:point val="39.6617,66.467"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="38.9117,65.717;40.5967,69.8997"/>
+        <dia:rectangle val="38.9117,65.717;40.5967,69.8996"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -4776,7 +4806,7 @@ if item with the specified key already exists#</dia:string>
         <dia:point val="39.6617,66.467"/>
         <dia:point val="39.6617,68.1333"/>
         <dia:point val="39.645,68.1333"/>
-        <dia:point val="39.645,69.0997"/>
+        <dia:point val="39.645,69.0996"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -4794,7 +4824,7 @@ if item with the specified key already exists#</dia:string>
       </dia:attribute>
       <dia:connections>
         <dia:connection handle="0" to="O6" connection="16"/>
-        <dia:connection handle="1" to="O9" connection="16"/>
+        <dia:connection handle="1" to="O9" connection="18"/>
       </dia:connections>
     </dia:object>
     <dia:object type="UML - Class" version="0" id="O28">

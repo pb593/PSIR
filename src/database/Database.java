@@ -6,16 +6,19 @@ package database;
  *This is the most generic abstract class for a database.  
 **/
 
+import java.util.List;
+import java.util.LinkedList;
+
 abstract class Database<K extends Comparable<K>, V> {
 	
-	private List<V> items = new LinkedList<V>();
+	protected List<V> items = new LinkedList<V>();
 	
 	public void add(V item) throws KeyCollision {
 		
 		if(items.contains(item.getKey()))
 			throw new KeyCollision();
 		else
-			items.add(item)
+			items.add(item);
 				
 	}
 	

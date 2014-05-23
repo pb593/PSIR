@@ -1,13 +1,15 @@
 package database;
 
 
-import java.awt.Image;
-
 /*
  * Author: P. Berkovich
  *
  * This singleton class is the ProductDatabase
  */
+
+
+import java.awt.Image;
+import java.util.List;
 
 class ProductDatabase extends Database<String, Product>{
 	
