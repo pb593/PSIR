@@ -2221,13 +2221,13 @@ Does this require much state?#</dia:string>
     </dia:object>
     <dia:object type="UML - Class" version="0" id="O11">
       <dia:attribute name="obj_pos">
-        <dia:point val="68.95,40.05"/>
+        <dia:point val="68.85,40.05"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="68.9,40;81.82,45.1"/>
+        <dia:rectangle val="68.8,40;81.72,45.1"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="68.95,40.05"/>
+        <dia:point val="68.85,40.05"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="12.82"/>
@@ -2467,19 +2467,19 @@ Does this require much state?#</dia:string>
     </dia:object>
     <dia:object type="UML - Class" version="0" id="O12">
       <dia:attribute name="obj_pos">
-        <dia:point val="53.3333,58.3"/>
+        <dia:point val="53.3333,58.25"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="53.2833,58.25;65.0483,64.95"/>
+        <dia:rectangle val="53.2833,58.2;65.0483,69.45"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="53.3333,58.3"/>
+        <dia:point val="53.3333,58.25"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="11.665000000000001"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
-        <dia:real val="6.5999999999999996"/>
+        <dia:real val="11.15"/>
       </dia:attribute>
       <dia:attribute name="name">
         <dia:string>#Offer#</dia:string>
@@ -2506,7 +2506,7 @@ Does this require much state?#</dia:string>
         <dia:boolean val="true"/>
       </dia:attribute>
       <dia:attribute name="visible_comments">
-        <dia:boolean val="false"/>
+        <dia:boolean val="true"/>
       </dia:attribute>
       <dia:attribute name="wrap_operations">
         <dia:boolean val="true"/>
@@ -2574,7 +2574,7 @@ Does this require much state?#</dia:string>
             <dia:string>#offerID#</dia:string>
           </dia:attribute>
           <dia:attribute name="type">
-            <dia:string>#int#</dia:string>
+            <dia:string>#final int#</dia:string>
           </dia:attribute>
           <dia:attribute name="value">
             <dia:string>##</dia:string>
@@ -4230,16 +4230,16 @@ if item with given ID not found.#</dia:string>
         <dia:point val="42.4258,52.6171"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="41.6758,51.8671;60.9058,59.0496"/>
+        <dia:rectangle val="41.6758,51.8671;60.9058,58.9997"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
         <dia:point val="42.4258,52.6171"/>
-        <dia:point val="42.4258,55.7833"/>
-        <dia:point val="59.1658,55.7833"/>
-        <dia:point val="59.1658,58.2496"/>
+        <dia:point val="42.4258,55.7584"/>
+        <dia:point val="59.1658,55.7584"/>
+        <dia:point val="59.1658,58.1997"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -4372,7 +4372,7 @@ if item with given ID not found.#</dia:string>
         <dia:point val="75.2793,36.2837"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="74.5293,35.5337;77.1,40.0497"/>
+        <dia:rectangle val="74.5293,35.5337;77,40.0497"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -4380,8 +4380,8 @@ if item with given ID not found.#</dia:string>
       <dia:attribute name="orth_points">
         <dia:point val="75.2793,36.2837"/>
         <dia:point val="75.2793,38.4917"/>
-        <dia:point val="75.36,38.4917"/>
-        <dia:point val="75.36,39.9997"/>
+        <dia:point val="75.26,38.4917"/>
+        <dia:point val="75.26,39.9997"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -4440,19 +4440,19 @@ if item with given ID not found.#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="59.1658,58.2501"/>
+        <dia:point val="59.1658,58.1998"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="59.1158,45.05;75.945,59.0501"/>
+        <dia:rectangle val="59.1158,45.05;75.845,58.9998"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="59.1658,58.2501"/>
+        <dia:point val="59.1658,58.1998"/>
         <dia:point val="59.1658,55.7667"/>
-        <dia:point val="75.36,55.7667"/>
-        <dia:point val="75.36,45.1"/>
+        <dia:point val="75.26,55.7667"/>
+        <dia:point val="75.26,45.1"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -4617,19 +4617,19 @@ if item with given ID not found.#</dia:string>
     </dia:object>
     <dia:object type="UML - Class" version="0" id="O28">
       <dia:attribute name="obj_pos">
-        <dia:point val="51.9583,27.0167"/>
+        <dia:point val="51.9583,27.0667"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="51.9083,26.9667;66.3683,39.4167"/>
+        <dia:rectangle val="51.9083,27.0167;66.3683,46.2167"/>
       </dia:attribute>
       <dia:attribute name="elem_corner">
-        <dia:point val="51.9583,27.0167"/>
+        <dia:point val="51.9583,27.0667"/>
       </dia:attribute>
       <dia:attribute name="elem_width">
         <dia:real val="14.359999999999999"/>
       </dia:attribute>
       <dia:attribute name="elem_height">
-        <dia:real val="12.35"/>
+        <dia:real val="19.100000000000001"/>
       </dia:attribute>
       <dia:attribute name="name">
         <dia:string>#OfferDatabase#</dia:string>
@@ -4852,6 +4852,36 @@ if item with given ID not found.#</dia:string>
             </dia:composite>
           </dia:attribute>
         </dia:composite>
+        <dia:composite type="umloperation">
+          <dia:attribute name="name">
+            <dia:string>#getFreshID#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="stereotype">
+            <dia:string>##</dia:string>
+          </dia:attribute>
+          <dia:attribute name="type">
+            <dia:string>#int#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="visibility">
+            <dia:enum val="0"/>
+          </dia:attribute>
+          <dia:attribute name="comment">
+            <dia:string>#Use it in Offer constructor to assign OfferID. Not a good solution for a highly parallelised system=(#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="abstract">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="inheritance_type">
+            <dia:enum val="2"/>
+          </dia:attribute>
+          <dia:attribute name="query">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="class_scope">
+            <dia:boolean val="false"/>
+          </dia:attribute>
+          <dia:attribute name="parameters"/>
+        </dia:composite>
       </dia:attribute>
       <dia:attribute name="template">
         <dia:boolean val="false"/>
@@ -4863,16 +4893,16 @@ if item with given ID not found.#</dia:string>
         <dia:point val="64.6176,17.8854"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="59.0883,17.8354;65.4676,27.0163"/>
+        <dia:rectangle val="59.0883,17.8354;65.4676,27.0664"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
         <dia:point val="64.6176,17.8854"/>
-        <dia:point val="64.6176,22.8258"/>
-        <dia:point val="59.1383,22.8258"/>
-        <dia:point val="59.1383,26.9663"/>
+        <dia:point val="64.6176,22.8509"/>
+        <dia:point val="59.1383,22.8509"/>
+        <dia:point val="59.1383,27.0164"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -4896,7 +4926,7 @@ if item with given ID not found.#</dia:string>
       </dia:attribute>
       <dia:connections>
         <dia:connection handle="0" to="O14" connection="16"/>
-        <dia:connection handle="1" to="O28" connection="16"/>
+        <dia:connection handle="1" to="O28" connection="18"/>
       </dia:connections>
     </dia:object>
     <dia:object type="UML - Association" version="2" id="O30">
@@ -4937,19 +4967,19 @@ if item with given ID not found.#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="59.1383,39.417"/>
+        <dia:point val="59.1383,46.217"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="58.3883,38.667;60.9058,59.0496"/>
+        <dia:rectangle val="58.3883,45.467;60.9058,58.9997"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="59.1383,39.417"/>
-        <dia:point val="59.1383,49.1833"/>
-        <dia:point val="59.1658,49.1833"/>
-        <dia:point val="59.1658,58.2496"/>
+        <dia:point val="59.1383,46.217"/>
+        <dia:point val="59.1383,52.5583"/>
+        <dia:point val="59.1658,52.5583"/>
+        <dia:point val="59.1658,58.1997"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -4966,9 +4996,60 @@ if item with given ID not found.#</dia:string>
         <dia:color val="#000000"/>
       </dia:attribute>
       <dia:connections>
-        <dia:connection handle="0" to="O28" connection="16"/>
+        <dia:connection handle="0" to="O28" connection="18"/>
         <dia:connection handle="1" to="O12" connection="20"/>
       </dia:connections>
+    </dia:object>
+    <dia:object type="UML - Note" version="0" id="O31">
+      <dia:attribute name="obj_pos">
+        <dia:point val="49.3565,69.6159"/>
+      </dia:attribute>
+      <dia:attribute name="obj_bb">
+        <dia:rectangle val="49.3065,69.5659;84.9565,71.3659"/>
+      </dia:attribute>
+      <dia:attribute name="meta">
+        <dia:composite type="dict"/>
+      </dia:attribute>
+      <dia:attribute name="elem_corner">
+        <dia:point val="49.3565,69.6159"/>
+      </dia:attribute>
+      <dia:attribute name="elem_width">
+        <dia:real val="35.549999999999997"/>
+      </dia:attribute>
+      <dia:attribute name="elem_height">
+        <dia:real val="1.7000000000000002"/>
+      </dia:attribute>
+      <dia:attribute name="line_width">
+        <dia:real val="0.10000000000000001"/>
+      </dia:attribute>
+      <dia:attribute name="line_colour">
+        <dia:color val="#000000"/>
+      </dia:attribute>
+      <dia:attribute name="fill_colour">
+        <dia:color val="#ffffff"/>
+      </dia:attribute>
+      <dia:attribute name="text">
+        <dia:composite type="text">
+          <dia:attribute name="string">
+            <dia:string>#OfferID must be assigned in the constructor using OfferDatabase.getInstance().getFreshID()#</dia:string>
+          </dia:attribute>
+          <dia:attribute name="font">
+            <dia:font family="monospace" style="0" name="Courier"/>
+          </dia:attribute>
+          <dia:attribute name="height">
+            <dia:real val="0.80000000000000004"/>
+          </dia:attribute>
+          <dia:attribute name="pos">
+            <dia:point val="49.7065,70.8609"/>
+          </dia:attribute>
+          <dia:attribute name="color">
+            <dia:color val="#000000"/>
+          </dia:attribute>
+          <dia:attribute name="alignment">
+            <dia:enum val="0"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
     </dia:object>
   </dia:layer>
 </dia:diagram>
