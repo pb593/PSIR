@@ -1,10 +1,16 @@
+Communications are generally query-response. Acknowledgements are given by the server before client makes new requests.
+
+Communicated data are space-separated arguments. Exceptions are:
+	quotes: "This is all one thing" and "He said ""I can use double quotes"" when escaping"
+	hashes: #41 This is a dump of data so many bytes long
+
 Connection created:
 	Server: PSIR Version 0.0.0
 	Server: WhatAreYou
 	Client: User [VERSION]
 			Server: WhatDoYouWant
 					Client: Login USER_ID
-							Server: GiveKey   # Simplification: like password
+							Server: GiveKey   // Simplification: like password
 							Client: HereIsKey KEY
 									Server: Accepted
 										Rejected
@@ -12,7 +18,7 @@ Connection created:
 					  (again 0)
 					Client: Scan
 							Server: GiveImage
-							Client: HereIsImage BYTES DUMPS_DATA   # See ML tick 4 for image format
+							Client: HereIsImage #BYTES DUMPS_DATA
 							Server: HereAreProducts
 									Server: HereIsProduct PRODUCT_ID
 									...
@@ -56,7 +62,7 @@ Connection created:
 					Client: RegisterUser
 							Server: GiveKey
 							Client: HereIsKey KEY
-							Server: YouAre USER_ID   # Phone doesn't care about usernames.
+							Server: YouAre USER_ID   // Phone doesn't care about usernames.
 					  (again 0)
 		Vendor [VERSION]
 			Server: WhatDoYouWant
@@ -71,19 +77,49 @@ Connection created:
 							Server: GiveUsername
 									Client: HereIsUsername VENDOR_NAME
 											Server: Accepted
-												Rejected   # In use
+												Rejected   // In use
 												  (again 1)
 							Server: GivePassword
 							Client: HereIsPassword PASSWORD
-							Server: YouAre VENDOR_NAME
+							Server: OK
+					  (again 0)
+					Client: RegisterProduct
+							Server: GiveName
+									Client: HereIsName PRODUCT_NAME
+							Server: GiveDescription
+									Client: HereIsDescription DESCRIPTION
+							Client: GiveImages
+									Client: HereIsImage #BYTES DUMPS_DATA
+									Client: HereIsImage #BYTES DUMPS_DATA
+									...
+									EndList
+							Client: GiveDisplayImages
+									Client: HereIsImage #BYTES DUMPS_DATA
+									Client: HereIsImage #BYTES DUMPS_DATA
+									...
+									EndList
+							Server: OfferIs OFFER_ID
 					  (again 0)
 					Client: RegisterOffer
-							Server: GiveProducts
+							Server: GiveProduct
 									Client: HereIsProduct PRODUCT_ID
-									Client: EndList
+#							Server: GiveProducts
+#									Client: HereIsProduct PRODUCT_ID
+#									Client: EndList
 							Server: GivePrice
 									Client: HereIsPrice MONEY
 							Server: GiveAvailability
 									Client: HereIsAvailablility COUNT
 							Server: OfferIs OFFER_ID
+					  (again 0)
+					Client: UpdateOffer
+							Server: GiveOffer
+									Client: HereIsOffer OFFER_ID
+							Server: GiveUpdates
+									[Client: HereIsProduct PRODUCT_ID]
+									[Client: HereIsPrice MONEY]
+									[Client: HereIsAvailability COUNT]
+									Client: EndList
+							Server: OK
+					  (again 0)
 					
