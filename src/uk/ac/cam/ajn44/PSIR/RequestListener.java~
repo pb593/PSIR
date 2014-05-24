@@ -1,0 +1,27 @@
+/*
+ * Listens for incoming network connections and upon accepting network
+ * connections calls the relevant request handler.
+ */
+
+
+
+public class RequestListener {
+    /**
+     * Port server listens on.
+     */
+    private final int listenPort;
+    /**
+     * List of RequestHandlers which can be called based upon request.
+     */
+    private RequestHandler[] handlers = {};
+    
+    /**
+     * Creates the listener, but does not start listening.
+     *
+     * @param port Port to listen on.
+     */
+    public RequestListener (int port) {
+        listenPort = port;
+        
+    }
+}

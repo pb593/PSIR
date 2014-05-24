@@ -1,0 +1,127 @@
+Communications are generally query-response. Acknowledgements are given by the server before client makes new requests.
+
+Communicated data are space-separated arguments. Exceptions are:
+	quotes: "This is all one thing" and "He said ""I can use double quotes"" when escaping"
+	hashes: #41 This is a dump of data so many bytes long
+Command and argument sets are separated by linefeeds. Carriage returns not part of arguments are ignored.
+
+Notation:
+	Indentation represents branches in conversation tree.
+	(again x) means go back to the start of the indentation x levels up (0 means same level)
+
+Connection created:
+	Server: IAmA PSIRServer 0.0.0
+	Server: WhatAreYou
+	Client: IAmA User [VERSION]
+			Server: WhatDoYouWant
+					Client: Login USER_ID
+							Server: GiveKey   // Simplification: like password
+							Client: HereIsKey KEY
+									Server: Accepted
+										Rejected
+										  (again 1)
+						  (again 1)
+						Scan
+							Server: GiveImage
+							Client: HereIsImage #BYTES DUMPS_DATA
+							Server: HereAreProducts
+									Server: HereIsProduct PRODUCT_ID
+									...
+									Server: EndList
+				          	  (again 1)
+						GiveProductDescription PRODUCT_ID
+							Server: HereIsProductDescription
+									Server: HereIsOffer OFFER_ID
+									...
+									Server: EndList
+					  	  (again 1)
+						GiveOfferDescription OFFER_ID
+							Server: HereIsOfferDescription
+									Server: HereIsProduct PRODUCT_ID
+									Server: HereIsPrice MONEY
+									...
+									Server: EndList
+						  (again 1)
+						Purchase
+							Server: FillCart
+									Client: AddToCart OFFER_ID COUNT
+									Client: AddToCart OFFER_ID COUNT
+											...
+									...
+									Client: Submit
+							Server: GiveAddress
+									Client: HereIsAddress ADDRESS
+							Server: GivePayment MONEY
+									Client: PayByCard
+											Client: HereIsCardNumber NUMBER
+											Client: HereIsCardExpires DATA
+											Client: HereIsCardSecurityCode CODE
+											...
+											Client: Submit
+													Server: Accept
+														Reject
+													  	  (again 1)
+									...
+							Server: Receipt ORDER_ID
+						  (again 1)
+						RegisterUser
+							Server: GiveKey
+							Client: HereIsKey KEY
+							Server: YouAre USER_ID   // Phone doesn't care about usernames.
+						  (again 1)
+		IAmA Vendor [VERSION]
+			Server: WhatDoYouWant
+					Client: Login VENDOR_NAME
+							Server: GivePassword
+							Client: HereIsPassword PASSWORD
+									Server: Accepted
+										Rejected
+										  (again 1)
+						  (again 1)
+						RegisterVendor
+							Server: GiveUsername
+									Client: HereIsUsername VENDOR_NAME
+											Server: Accepted
+												Rejected   // In use
+												  (again 1)
+							Server: GivePassword
+							Client: HereIsPassword PASSWORD
+							Server: OK
+						  (again 1)
+						RegisterProduct
+							Server: GiveName
+									Client: HereIsName PRODUCT_NAME
+							Server: GiveDescription
+									Client: HereIsDescription DESCRIPTION
+							Client: GiveImages
+									Client: HereIsImage #BYTES DUMPS_DATA
+									Client: HereIsImage #BYTES DUMPS_DATA
+									...
+									EndList
+							Client: GiveDisplayImages
+									Client: HereIsImage #BYTES DUMPS_DATA
+									Client: HereIsImage #BYTES DUMPS_DATA
+									...
+									EndList
+							Server: OfferIs OFFER_ID
+						  (again 1)
+						RegisterOffer
+							Server: GiveProduct
+									Client: HereIsProduct PRODUCT_ID
+							Server: GivePrice
+									Client: HereIsPrice MONEY
+							Server: GiveAvailability
+									Client: HereIsAvailablility COUNT
+							Server: OfferIs OFFER_ID
+						  (again 1)
+						UpdateOffer
+							Server: GiveOffer
+									Client: HereIsOffer OFFER_ID
+							Server: GiveUpdates
+									[Client: HereIsProduct PRODUCT_ID]
+									[Client: HereIsPrice MONEY]
+									[Client: HereIsAvailability COUNT]
+									Client: EndList
+							Server: OK
+						  (again 1)
+					
