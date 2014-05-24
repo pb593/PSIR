@@ -16,29 +16,29 @@ Connection created:
 			Server: WhatDoYouWant
 					Client: Login USER_ID
 							Server: GiveKey   // Simplification: like password
-							Client: HereIsKey KEY
+							Client: HereIs Key KEY
 									Server: Accepted
 										Rejected
 										  (again 1)
 						  (again 1)
 						Scan
-							Server: GiveImage
-							Client: HereIsImage #BYTES DUMPS_DATA
-							Server: HereAreProducts
-									Server: HereIsProduct PRODUCT_ID
+							Server: Give Image
+							Client: HereIs Image #BYTES DUMPS_DATA
+							Server: HereAre Products
+									Server: HereIs Product PRODUCT_ID
 									...
 									Server: EndList
 				          	  (again 1)
-						GiveProductDescription PRODUCT_ID
-							Server: HereIsProductDescription
-									Server: HereIsOffer OFFER_ID
+						Give ProductDescription PRODUCT_ID
+							Server: HereIs ProductDescription
+									Server: HereIs Offer OFFER_ID
 									...
 									Server: EndList
 					  	  (again 1)
-						GiveOfferDescription OFFER_ID
-							Server: HereIsOfferDescription
-									Server: HereIsProduct PRODUCT_ID
-									Server: HereIsPrice MONEY
+						Give OfferDescription OFFER_ID
+							Server: HereIs OfferDescription
+									Server: HereIs Product PRODUCT_ID
+									Server: HereIs Price MONEY
 									...
 									Server: EndList
 						  (again 1)
@@ -49,13 +49,13 @@ Connection created:
 											...
 									...
 									Client: Submit
-							Server: GiveAddress
-									Client: HereIsAddress ADDRESS
-							Server: GivePayment MONEY
+							Server: Give Address
+									Client: HereIs Address ADDRESS
+							Server: Give Payment MONEY
 									Client: PayByCard
-											Client: HereIsCardNumber NUMBER
-											Client: HereIsCardExpires DATA
-											Client: HereIsCardSecurityCode CODE
+											Client: HereIs CardNumber NUMBER
+											Client: HereIs CardExpires DATA
+											Client: HereIs CardSecurityCode CODE
 											...
 											Client: Submit
 													Server: Accept
@@ -65,62 +65,62 @@ Connection created:
 							Server: Receipt ORDER_ID
 						  (again 1)
 						RegisterUser
-							Server: GiveKey
-							Client: HereIsKey KEY
+							Server: Give Key
+							Client: HereIs Key KEY
 							Server: YouAre USER_ID   // Phone doesn't care about usernames.
 						  (again 1)
 		IAmA Vendor [VERSION]
 			Server: WhatDoYouWant
 					Client: Login VENDOR_NAME
-							Server: GivePassword
-							Client: HereIsPassword PASSWORD
+							Server: Give Password
+							Client: HereIs Password PASSWORD
 									Server: Accepted
 										Rejected
 										  (again 1)
 						  (again 1)
 						RegisterVendor
-							Server: GiveUsername
-									Client: HereIsUsername VENDOR_NAME
+							Server: Give Username
+									Client: HereIs Username VENDOR_NAME
 											Server: Accepted
 												Rejected   // In use
 												  (again 1)
-							Server: GivePassword
-							Client: HereIsPassword PASSWORD
+							Server: Give Password
+							Client: HereIs Password PASSWORD
 							Server: OK
 						  (again 1)
 						RegisterProduct
-							Server: GiveName
-									Client: HereIsName PRODUCT_NAME
-							Server: GiveDescription
-									Client: HereIsDescription DESCRIPTION
-							Client: GiveImages
-									Client: HereIsImage #BYTES DUMPS_DATA
-									Client: HereIsImage #BYTES DUMPS_DATA
+							Server: Give Name
+									Client: HereIs Name PRODUCT_NAME
+							Server: Give Description
+									Client: HereIs Description DESCRIPTION
+							Client: Give Images
+									Client: HereIs Image #BYTES DUMPS_DATA
+									Client: HereIs Image #BYTES DUMPS_DATA
 									...
 									EndList
-							Client: GiveDisplayImages
-									Client: HereIsImage #BYTES DUMPS_DATA
-									Client: HereIsImage #BYTES DUMPS_DATA
+							Client: Give DisplayImages
+									Client: HereIs Image #BYTES DUMPS_DATA
+									Client: HereIs Image #BYTES DUMPS_DATA
 									...
 									EndList
 							Server: OfferIs OFFER_ID
 						  (again 1)
 						RegisterOffer
-							Server: GiveProduct
-									Client: HereIsProduct PRODUCT_ID
-							Server: GivePrice
-									Client: HereIsPrice MONEY
-							Server: GiveAvailability
-									Client: HereIsAvailablility COUNT
+							Server: Give Product
+									Client: HereIs Product PRODUCT_ID
+							Server: Give Price
+									Client: HereIs Price MONEY
+							Server: Give Availability
+									Client: HereIs Availablility COUNT
 							Server: OfferIs OFFER_ID
 						  (again 1)
 						UpdateOffer
-							Server: GiveOffer
-									Client: HereIsOffer OFFER_ID
-							Server: GiveUpdates
-									[Client: HereIsProduct PRODUCT_ID]
-									[Client: HereIsPrice MONEY]
-									[Client: HereIsAvailability COUNT]
+							Server: Give Offer
+									Client: HereIs Offer OFFER_ID
+							Server: Give Updates
+									[Client: HereIs Product PRODUCT_ID]
+									[Client: HereIs Price MONEY]
+									[Client: HereIs Availability COUNT]
 									Client: EndList
 							Server: OK
 						  (again 1)

@@ -5,6 +5,8 @@ NULL=
 
 JAVAC=javac
 
+JAVAC_FLAGS=-Xlint:unchecked
+
 JAVA_SOURCE_FILES_PSIRSERVER= \
 	psirserver/PSIRServer.java \
 	$(NULL)
@@ -33,4 +35,4 @@ JAVA_SOURCE_FILES= \
 	$(NULL)
 
 all:
-	$(JAVAC) $(JAVA_SOURCE_FILES)
+	$(JAVAC) $(JAVAC_FLAGS) $(JAVA_SOURCE_FILES)
