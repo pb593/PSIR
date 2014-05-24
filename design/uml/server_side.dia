@@ -3363,7 +3363,7 @@ Does this require much state?#</dia:string>
             <dia:string>##</dia:string>
           </dia:attribute>
           <dia:attribute name="visibility">
-            <dia:enum val="1"/>
+            <dia:enum val="2"/>
           </dia:attribute>
           <dia:attribute name="abstract">
             <dia:boolean val="false"/>
@@ -4510,19 +4510,19 @@ if item with the specified key already exists#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="90.6276,34.0755"/>
+        <dia:point val="90.6276,34.0754"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="89.8776,33.3255;92.3817,40.7579"/>
+        <dia:rectangle val="89.8776,33.3254;92.3817,40.7578"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="90.6276,34.0755"/>
-        <dia:point val="90.6276,37.3667"/>
-        <dia:point val="90.6417,37.3667"/>
-        <dia:point val="90.6417,39.9579"/>
+        <dia:point val="90.6276,34.0754"/>
+        <dia:point val="90.6276,37.3666"/>
+        <dia:point val="90.6417,37.3666"/>
+        <dia:point val="90.6417,39.9578"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -4581,19 +4581,19 @@ if item with the specified key already exists#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="75.2793,35.4836"/>
+        <dia:point val="75.2793,35.4837"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="74.5293,34.7336;77,40.0496"/>
+        <dia:rectangle val="74.5293,34.7337;77,40.0495"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="75.2793,35.4836"/>
+        <dia:point val="75.2793,35.4837"/>
         <dia:point val="75.2793,38.0916"/>
         <dia:point val="75.26,38.0916"/>
-        <dia:point val="75.26,39.9996"/>
+        <dia:point val="75.26,39.9995"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -4655,7 +4655,7 @@ if item with the specified key already exists#</dia:string>
         <dia:point val="59.1658,60.1998"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="59.1158,47.5535;75.845,60.9998"/>
+        <dia:rectangle val="59.1158,47.5534;75.845,60.9998"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -4664,7 +4664,7 @@ if item with the specified key already exists#</dia:string>
         <dia:point val="59.1658,60.1998"/>
         <dia:point val="59.1658,55.7667"/>
         <dia:point val="75.26,55.7667"/>
-        <dia:point val="75.26,47.6035"/>
+        <dia:point val="75.26,47.6034"/>
       </dia:attribute>
       <dia:attribute name="orth_orient">
         <dia:enum val="1"/>
@@ -5075,7 +5075,7 @@ if item with the specified key already exists#</dia:string>
         <dia:point val="64.6176,23.1519"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="59.0883,23.1019;65.4676,27.0841"/>
+        <dia:rectangle val="59.0883,23.1019;65.4676,27.0663"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
@@ -5149,16 +5149,16 @@ if item with the specified key already exists#</dia:string>
         <dia:boolean val="false"/>
       </dia:attribute>
       <dia:attribute name="obj_pos">
-        <dia:point val="59.1383,39.467"/>
+        <dia:point val="59.1383,39.4671"/>
       </dia:attribute>
       <dia:attribute name="obj_bb">
-        <dia:rectangle val="58.3883,38.717;60.9058,60.9997"/>
+        <dia:rectangle val="58.3883,38.7171;60.9058,60.9997"/>
       </dia:attribute>
       <dia:attribute name="meta">
         <dia:composite type="dict"/>
       </dia:attribute>
       <dia:attribute name="orth_points">
-        <dia:point val="59.1383,39.467"/>
+        <dia:point val="59.1383,39.4671"/>
         <dia:point val="59.1383,50.1834"/>
         <dia:point val="59.1658,50.1834"/>
         <dia:point val="59.1658,60.1997"/>
