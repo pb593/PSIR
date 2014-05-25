@@ -152,6 +152,7 @@ public class Session {
                     }
                     break;
                 case '#':
+		    quoted = false;
                     if (quoting) {
                         arg.write ('#');
                     } else {
@@ -179,6 +180,7 @@ public class Session {
                     quoting = !quoting;
                     break;
                 default:
+		    quoted = false;
                     ignoreSpace = false;
                     arg.write (b);
                     break;
