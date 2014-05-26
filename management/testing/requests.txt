@@ -1,0 +1,9 @@
+Testing required:
+
+Session:
+	Stability with poor connections
+	Argument transfer and formatting
+		Discovered bug:
+		       Client sending quotes.
+		       	      RESOLVED.
+
